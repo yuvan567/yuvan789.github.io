@@ -1,0 +1,333 @@
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .b1{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: url(../annie-spratt-N46IkbWUvMU-unsplash\ \(1\).jpg) no-repeat 50% 50%;
+    top: 0;
+    display: table;
+    background-size: cover;
+  }
+  .banner{
+    width: 100%;
+    position: absolute;
+    top: 350px;
+    transform: translateY(-50%);
+    text-align:center;
+    color:white;
+    }
+    .banner button{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        display: inline-block;
+        padding: 12px 36px;
+        margin: 10px 0;
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        letter-spacing: 2px;
+        border-radius: 40px;
+        background: rgb(50, 223, 7);
+
+    }
+  
+    .banner h1{
+      font-size: 30px;
+      font-family: 'PT Sans', sans-serif;
+      }
+    .title{
+    font-size: 70px;
+    line-height: 100px;
+    height: 100px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'PT Sans', sans-serif;
+    }
+    .slider{
+    color: rgb(50, 223, 7);
+    margin-left: 12px;
+    box-sizing: border-box;
+    animation: slider 6s linear infinite;
+    font-family: 'PT Sans', sans-serif;
+   
+    }
+    @keyframes slider{
+    0%{margin-top: -200px;}
+    30%{ margin-top: -200px;}
+    35%{margin-top: 0px;}
+    65%{ margin-top: 0px;}
+    70%{ margin-top: 200px;}
+    100%{margin-top: 200px;}
+    }
+
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+header,
+header:before {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: url(../spencer-imbrock-cIiP9wo8his-unsplash.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+/*--------background,ext,effect,parallex------------*/   
+  
+/*--------contact form------------*/   
+  
+#contact-form {
+    margin: 5% 1.4%;
+}
+
+#contact-form ul {
+    list-style: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+#contact-form li {
+    padding: 10px;
+}
+
+#contact-form li:last-of-type {
+    border-bottom: none;
+}
+
+#contact-form label {
+    display: block;
+    font-size: .8em;
+    color: #999;
+    padding-left: 5px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    resize: vertical;
+    background: transparent;
+    color: #fff;
+    font-weight: bolder;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+textarea:focus {
+    outline: none;
+    border: none;
+}
+
+.textarea {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.send {
+    margin-left: 50px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    background: transparent;
+    color: #dfdfdf;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.send:hover {
+    background: #dfdfdf;
+    color: #101010;
+}
+
+@media(max-width: 768px) {
+    #contact-form {
+          margin: 5% -8%;
+          width: 98%;
+    }
+}
+/*--------contact form------------*/
+
+
+/*--------nav------------*/
+nav {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+}
+
+
+nav #menu {
+    float: left;
+    left: 40%;
+    position: fixed;
+}
+
+nav #menu li {
+    padding-left: 40px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 300;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.3s ease-out;
+}
+
+
+
+nav #menu li a {
+    color: #fff;
+}
+
+nav #menu li a:hover {
+    text-decoration: none;
+}
+
+/*--------nav------------*/
+.header{
+    z-index: 2;
+    position: absolute;
+    top: 100vh;
+    background: white;
+    line-height: 30px;
+    font-weight: lighter;
+    padding: 40px;
+    color: grey;
+}
+.hero-content {
+    margin-left: 0%;
+}
+
+.hero-content p {
+    font-weight: 300;
+    line-height: 36px;
+    color: grey;
+}
+
+.hero-content h6 {
+    text-align: left;
+}
+
+@media(max-width: 768px) {
+    .hero-content {
+          padding-top: 50px;
+          width: 96%;
+          margin: 0 auto;
+    }
+}
+.container {
+    z-index: 2;
+    position: absolute;
+    top: 100vh;
+    background: black;
+    line-height: 30px;
+    font-weight: lighter;
+    padding: 40px;
+    color: grey;
+}
+/*facebook,insta */
+  .social-menu ul {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0;
+      margin: 0;
+      display: flex;
+  }
+  .social-menu ul li {
+      list-style: none;
+      margin: 0 10px;
+  }
+  .social-menu ul li .fa {
+      color: #000000;
+      font-size: 25px;
+      line-height: 50px;
+      transition: .5s;
+  }
+  .social-menu ul li .fa:hover {
+      color: #ffffff;
+  }
+  .social-menu ul li a {
+      position: relative;
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: white;
+      text-align: center;
+      transition: 0.5s;
+      transform: translate(0,0px);
+      box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+  }
+  .social-menu ul li a:hover {
+      transform: rotate(0deg) skew(0deg) translate(0, -10px);
+  }
+  .social-menu ul li:nth-child(1) a:hover {
+      background-color: #3b5999;
+  }
+  .social-menu ul li:nth-child(2) a:hover {
+      background-color: #55acee;
+  }
+  .social-menu ul li:nth-child(3) a:hover {
+      background-color: #e4405f;
+  }
+  .social-menu ul li:nth-child(4) a:hover {
+      background-color: #cd201f;
+  }
+  .social-menu ul li:nth-child(5) a:hover {
+      background-color: #0077B5;
+  }
